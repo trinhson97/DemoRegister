@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E77430FC20E22C6600C1146C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77430FB20E22C6600C1146C /* AppDelegate.swift */; };
-		E77430FE20E22C6600C1146C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77430FD20E22C6600C1146C /* ViewController.swift */; };
 		E774310120E22C6600C1146C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77430FF20E22C6600C1146C /* Main.storyboard */; };
 		E774310320E22C6600C1146C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E774310220E22C6600C1146C /* Assets.xcassets */; };
 		E774310620E22C6600C1146C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E774310420E22C6600C1146C /* LaunchScreen.storyboard */; };
+		E774310E20E22C7D00C1146C /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = E774310D20E22C7D00C1146C /* Cities.plist */; };
+		E774311020E22C8600C1146C /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E774310F20E22C8600C1146C /* Districts.plist */; };
+		E774311220E22CA700C1146C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774311120E22CA700C1146C /* TableViewController.swift */; };
+		E774311420E22CDE00C1146C /* DataSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774311320E22CDE00C1146C /* DataSevice.swift */; };
+		E774311620E22DB600C1146C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774311520E22DB600C1146C /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E77430F820E22C6600C1146C /* DemoRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77430FB20E22C6600C1146C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E77430FD20E22C6600C1146C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E774310020E22C6600C1146C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E774310220E22C6600C1146C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E774310520E22C6600C1146C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E774310720E22C6600C1146C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E774310D20E22C7D00C1146C /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cities.plist; path = ../../Cities.plist; sourceTree = "<group>"; };
+		E774310F20E22C8600C1146C /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Districts.plist; path = ../../Districts.plist; sourceTree = "<group>"; };
+		E774311120E22CA700C1146C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E774311320E22CDE00C1146C /* DataSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSevice.swift; sourceTree = "<group>"; };
+		E774311520E22DB600C1146C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				E77430FB20E22C6600C1146C /* AppDelegate.swift */,
-				E77430FD20E22C6600C1146C /* ViewController.swift */,
+				E774311120E22CA700C1146C /* TableViewController.swift */,
+				E774311320E22CDE00C1146C /* DataSevice.swift */,
+				E774311520E22DB600C1146C /* City.swift */,
 				E77430FF20E22C6600C1146C /* Main.storyboard */,
 				E774310220E22C6600C1146C /* Assets.xcassets */,
 				E774310420E22C6600C1146C /* LaunchScreen.storyboard */,
+				E774310D20E22C7D00C1146C /* Cities.plist */,
+				E774310F20E22C8600C1146C /* Districts.plist */,
 				E774310720E22C6600C1146C /* Info.plist */,
 			);
 			path = DemoRegister;
@@ -124,8 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774310620E22C6600C1146C /* LaunchScreen.storyboard in Resources */,
+				E774311020E22C8600C1146C /* Districts.plist in Resources */,
 				E774310320E22C6600C1146C /* Assets.xcassets in Resources */,
 				E774310120E22C6600C1146C /* Main.storyboard in Resources */,
+				E774310E20E22C7D00C1146C /* Cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77430FE20E22C6600C1146C /* ViewController.swift in Sources */,
 				E77430FC20E22C6600C1146C /* AppDelegate.swift in Sources */,
+				E774311420E22CDE00C1146C /* DataSevice.swift in Sources */,
+				E774311620E22DB600C1146C /* City.swift in Sources */,
+				E774311220E22CA700C1146C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
